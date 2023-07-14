@@ -41,19 +41,7 @@ const [message1,setmessages] = useState([]);
   },[roomid])
 console.log('msg',message1)
 
-  // const sentmessage = async (e)=>{
-  //      e.preventDefault();
-  //     await  axios.post('/messages/new',{
-     
-  //   message:input,
-  //   name:"Daniyal",
-  //   timestamp:"demo timestamp",
-  //   received:"false"
 
-  //      })
-
-  //      setInput('')
-  // }
 const sentmessage1 = (e)=>{
 e.preventDefault();
 db.collection('Rooms').doc(roomid).collection('messages').add({

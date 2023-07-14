@@ -10,42 +10,10 @@ import Login from './Login';
 import { useStateValue } from './StateProvider'
 
 function App() {
-  //const [user,setuser] = useState(null)
+ 
   const [message,setmessage] = useState([]);
   const [{user},dispatch]=useStateValue();
-  // useEffect(()=>{
-  //   Axios.get('/messages/sync').then((response)=>{
-  //     console.log('ftyd',response.data)
-      
-  //     setmessage(response.data);
-  
-  //   })
-  // },[])
-  // console.log('hghh',message)
 
-
-  // useEffect(()=>{
-  //   var pusher = new Pusher('f9761f2c941261dc8d8b', {
-  //     cluster: 'ap2'
-  //   });
-
-  //   var channel = pusher.subscribe('messages');
-  //   channel.bind('inserted',(data) =>{
-  //     // alert(JSON.stringify(data));
-  //     console.log('data',data)
-  //     console.log('message',message)
-  //     setmessage([...message,data])
-  //   });
-
-  //   return ()=>{
-  //     channel.unbind_all();
-  //     channel.unsubscribe()
-  //   }
-  // },[message])
-
- 
-
-  // console.log('last',message)
   return (
 
 
